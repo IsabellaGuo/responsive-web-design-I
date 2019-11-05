@@ -147,6 +147,7 @@ header .logo {
 
 .main-content .top-content {
   padding: 0 10px;
+  display: flex;
 }
 
 .main-content .top-content .text-content {
@@ -166,6 +167,8 @@ header .logo {
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
+  display: flex;
+
 }
 
 .main-content .bottom-content .text-content {
@@ -238,7 +241,7 @@ footer {
  }
 
 @media (max-width: 500px){
-    .top .navbar{
+    .navbar{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -257,26 +260,39 @@ footer {
         width:90%;
         
     }
-    .top-content{
-        display: flex;
-        flex-direction: column;
-
-    }  
-
     
-    .main-content .bottom-content {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            margin-right: 2%;
-          }
-    }
-    .main-content{
-        width: 90%;
-    }
-
     .text-content{
         margin: 5% 0;
     }
+    #contact{
+        margin-right: 10%;
+    }
+    .logo{
+        margin-left: 33%
+    }
+    .cta .cta-text{
+        margin-top: 0
+    }
 
+    .top-content{
+        display: flex;
+        flex-direction: column;
+      
+    }  
+
+    
+  .bottom-content {
+            display: flex;
+            flex-direction: column;
+            
+          }
+    }
+  .main-content .bottom-content .text-content{
+      width: 98%;
+  }
+
+  .main-content .middle-img {
+    margin: 0 5% 0 0;
+  }
+    
 }
